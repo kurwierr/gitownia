@@ -7,7 +7,7 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; background: #000; color: #fff; font-family: Helvetica, Arial, sans-serif; }
-  body { display: flex; flex-direction: column; filter: grayscale(1); }
+  body { display: flex; flex-direction: column; }
   header { padding: 10px 16px; border-bottom: 1px solid #fff; font-size: 16px; font-weight: 700; letter-spacing: 0.02em; }
   main { flex: 1; display: flex; min-height: 0; }
   #stream { flex: 1; min-width: 0; }
@@ -41,7 +41,7 @@
   document.getElementById("chat").innerHTML =
     '<iframe src="https://www.twitch.tv/embed/' + channel + '/chat?parent=' + host + '&darkpopout"></iframe>';
 
-  // Zmiana szerokości 
+  // Zmiana szerokości czatu
   var DEFAULT_W = 340, MIN_W = 200;
   var root = document.documentElement;
   var handle = document.getElementById("handle");
